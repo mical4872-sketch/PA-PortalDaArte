@@ -123,7 +123,7 @@ export default function Header() {
 }
 
 // Transformamos os estilos em uma função que recebe as cores do tema
-const getStyles = (theme) => StyleSheet.create({
+const getStyles = (theme: Record<string, string>) => StyleSheet.create({
   header: {
     height: 70,
     flexDirection: 'row',
