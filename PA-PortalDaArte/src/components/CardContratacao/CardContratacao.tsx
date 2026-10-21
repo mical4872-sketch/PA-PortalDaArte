@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import { Music } from 'lucide-react-native';
-import {
+import type {
   CardContratacaoProps,
   CardAvatarProps,
   CardInfoProps,
