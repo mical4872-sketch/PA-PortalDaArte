@@ -123,10 +123,12 @@ function CardStatus({ status }: CardStatusProps) {
   );
 }
 
-// Anexando subcomponentes
-CardContratacao.Avatar = CardAvatar;
-CardContratacao.Info = CardInfo;
-CardContratacao.Status = CardStatus;
+// Declara os subcomponentes como membros tipados do componente principal.
+export namespace CardContratacao {
+  export const Avatar = CardAvatar;
+  export const Info = CardInfo;
+  export const Status = CardStatus;
+}
 
 // -------------------------------------------------------------
 // ESTILOS
