@@ -1,5 +1,5 @@
 import type { ComponentType, ReactNode } from 'react';
-import { ViewStyle } from 'react-native';
+import type { ViewStyle } from 'react-native';
 
 export type StatusContratacao = 'Pendente' | 'Confirmado' | 'Concluido' | 'Concluído';
 
