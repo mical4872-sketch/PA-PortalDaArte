@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ComponentType, ReactNode } from 'react';
 import { ViewStyle } from 'react-native';
 
 export type StatusContratacao = 'Pendente' | 'Confirmado' | 'Concluido' | 'Concluído';
@@ -9,7 +9,7 @@ export interface PerfilContratado {
   name: string;
   category: string;
   fotoUrl?: string | null; // URL da foto do perfil (se existir)
-  icon?: React.ComponentType<{ size?: number; color?: string }>; // Ícone padrão caso não tenha foto
+  icon?: ComponentType<{ size?: number; color?: string }>; // Ícone padrão caso não tenha foto
   darkBgColor?: string;
   lightBgColor?: string;
   iconColor?: string;
@@ -34,7 +34,7 @@ export interface CardContratacaoProps {
 
 export interface CardAvatarProps {
   fotoUrl?: string | null;
-  iconFallback?: React.ComponentType<{ size?: number; color?: string }>;
+  iconFallback?: ComponentType<{ size?: number; color?: string }>;
   backgroundColor?: string;
   iconColor?: string;
 }
